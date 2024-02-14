@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         textResult = findViewById(R.id.textResult);
         llMain = findViewById(R.id.llMain);
         RadioGroup radioGroupGender = findViewById(R.id.radioGroupGender);
+        TextView textViewBMI = findViewById(R.id.textViewBMI);
 
 
         // Initially check the male RadioButton
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 double bmi = wt / (totalM * totalM);
 
 
-
+                textViewBMI.setText(getString(R.string.your_bmi_is) + " " + String.format("%.2f",bmi));
 
                 if (bmi > 25) {
                     textResult.setText(R.string.you_are_overweight);
@@ -82,6 +83,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
 
         }}
