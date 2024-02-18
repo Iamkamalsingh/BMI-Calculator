@@ -14,4 +14,5 @@
     <string name="female">Female</string>
     <string name="gender">Gender</string>
     <string name="your_bmi_is">Your BMI is </string>
+    <string name="thank_you_for_using_bmi">Thank You for Using BMI Calculator</string>
 </resources>
